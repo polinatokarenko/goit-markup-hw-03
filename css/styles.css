@@ -24,17 +24,59 @@ body {
     font-weight: 400;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
 }
 
-li {
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+/*common*/
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /*header*/
-.header-bg {
+.page-header {
     background-color: #ffffff;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .logo {
@@ -47,13 +89,20 @@ li {
     color: #4d5ae5;
 }
 
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
 .header-studio {
     color: #2e2f42;
 }
 
 .menu-nav {
+    display: block;
     font-weight: 500;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .menu-nav:hover {
@@ -67,10 +116,13 @@ li {
 .contacts {
     font-style: normal;
     color: #434455;
+    margin-left: auto;
 }
 
 .mail-tel {
     color: #434455;
+    display: block;
+    padding: 24px 0;
 }
 
 .mail-tel:hover {
@@ -83,7 +135,10 @@ li {
 
 /*main*/
   /*team section*/
-.first-section {background-color: #2e2f42;}
+.first-section {
+    background-color: #2e2f42;
+    padding-bottom: 188px;
+}
 
 .slogan {
     font-weight: 700;
@@ -92,6 +147,11 @@ li {
     text-align: center;
     color: #ffffff;
     letter-spacing: 0.02em;
+    padding-top: 188px;
+    margin-bottom: 48px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .order-button {
@@ -104,6 +164,9 @@ li {
     color: #ffffff;
     background-color: #4d5ae5;
     cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .order-button:hover {
